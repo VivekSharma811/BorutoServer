@@ -1,7 +1,7 @@
 package com.hyphen
 
 import com.hyphen.plugins.*
-import io.ktor.application.*
+import io.ktor.server.application.*
 
 fun main(args: Array<String>) {
     io.ktor.server.netty.EngineMain.main(args)

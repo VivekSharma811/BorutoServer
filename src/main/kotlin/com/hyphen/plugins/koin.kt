@@ -1,9 +1,8 @@
 package com.hyphen.plugins
 
 import com.hyphen.di.koinModule
-import io.ktor.application.*
-import org.koin.ktor.ext.Koin
-import org.koin.ktor.ext.modules
+import io.ktor.server.application.*
+import org.koin.ktor.plugin.Koin
 import org.koin.logger.slf4jLogger
 
 fun Application.configureKoin() {

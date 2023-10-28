@@ -1,8 +1,8 @@
 package com.hyphen.plugins
 
-import io.ktor.application.*
-import io.ktor.features.DefaultHeaders
 import io.ktor.http.*
+import io.ktor.server.application.*
+import io.ktor.server.plugins.defaultheaders.*
 import java.time.Duration
 
 fun Application.configureDefaultHeader() {

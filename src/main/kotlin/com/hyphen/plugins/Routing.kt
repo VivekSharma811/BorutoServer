@@ -3,9 +3,9 @@ package com.hyphen.plugins
 import com.hyphen.routes.getAllHeroes
 import com.hyphen.routes.root
 import com.hyphen.routes.searchHeroes
-import io.ktor.application.*
-import io.ktor.http.content.*
-import io.ktor.routing.*
+import io.ktor.server.application.*
+import io.ktor.server.http.content.*
+import io.ktor.server.routing.*
 
 fun Application.configureRouting() {
     routing {
@@ -13,8 +13,6 @@ fun Application.configureRouting() {
         getAllHeroes()
         searchHeroes()
 
-        static("/images") {
-            resource("images")
-        }
+        staticResources(remotePath = "/images", basePackage = "images")
     }
 }
